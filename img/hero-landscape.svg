@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Default hero artwork until the society uploads a photo: Snežnik above the Brkini hills -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b3d24"/><stop offset=".65" stop-color="#11683a"/><stop offset="1" stop-color="#1f8f4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="900" fill="url(#sky)"/>
+  <circle cx="1520" cy="250" r="70" fill="#ffc930"/>
+  <path d="M900 560 L1180 330 L1260 380 L1380 270 L1500 360 L1600 330 L1920 520 L1920 900 L900 900 Z" fill="#0d4a2b"/>
+  <path d="M1330 312 L1380 270 L1430 312 L1405 318 L1380 300 L1355 318 Z" fill="#e9f7ee" opacity=".9"/>
+  <path d="M0 640 C 260 560 480 560 720 620 C 960 680 1180 600 1420 560 C 1640 525 1800 560 1920 600 L1920 900 L0 900 Z" fill="#0f6b3a"/>
+  <path d="M0 740 C 300 660 560 700 820 740 C 1080 780 1340 700 1600 690 C 1760 684 1860 700 1920 715 L1920 900 L0 900 Z" fill="#138543"/>
+  <path d="M0 830 C 380 780 760 800 1100 830 C 1420 858 1700 820 1920 805 L1920 900 L0 900 Z" fill="#22b35e"/>
+</svg>
