@@ -90,6 +90,22 @@
     b.addEventListener('click', function () { set(!v.paused); });
   });
 
+  // Phones: tables become stacked cards; each cell gets its column name as a label
+  document.querySelectorAll('table.table-soz').forEach(function (t) {
+    // a column whose header is only for screen readers (the actions column) gets no visible label
+    var heads = Array.prototype.map.call(t.querySelectorAll('thead th'), function (th) {
+      var c = th.cloneNode(true);
+      c.querySelectorAll('.visually-hidden').forEach(function (n) { n.remove(); });
+      return c.textContent.trim();
+    });
+    t.classList.add('stack-sm');
+    t.querySelectorAll('tbody tr').forEach(function (tr) {
+      Array.prototype.forEach.call(tr.children, function (td, i) {
+        if (heads[i] && heads[i] !== '#') td.setAttribute('data-label', heads[i]);
+      });
+    });
+  });
+
   // Admin: filter rows in a table
   document.querySelectorAll('[data-filter-table]').forEach(function (input) {
     var rows = document.querySelectorAll('#' + input.getAttribute('data-filter-table') + ' tbody tr');
